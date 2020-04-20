@@ -278,3 +278,9 @@ snippet errwr "Error handling with errors.Wrap"
 	if ${1}err != nil {
 		return errors.Wrap(err, "${2}")
 	}
+	
+snippet elf "Error handling with log.Fatal"
+	if ${1}err != nil {
+		return log.Fatal(err)
+	}
+
